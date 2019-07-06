@@ -1,0 +1,25 @@
+{
+  "name": "leagueofgraphql",
+  "version": "1.0.0",
+  "description": "League of Legends Statistatistics API Built by GraphQL",
+  "main": "index.js",
+  "repository": "https://github.com/kentakang/leagueofgraphql",
+  "author": "kentakang",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.0",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.0",
+    "node-fetch": "^2.6.0",
+    "urlencode": "^1.1.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  }
+}

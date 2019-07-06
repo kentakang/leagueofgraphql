@@ -1,0 +1,24 @@
+type Summoner {
+  id: String!
+  name: String!
+  level: String!
+  profileIcon: Int!
+}
+
+type League {
+  type: String!
+  name: String!
+  hotStreak: Boolean!
+  wins: Int!
+  veteran: Boolean!
+  losses: Int!
+  rank: String!
+  inactive: Boolean!
+  freshBlood: Boolean!
+  leaguePoints: Int!
+}
+
+type Query {
+  summoner(name: String!): Summoner
+  league(id: String!, type: String!): League
+}
